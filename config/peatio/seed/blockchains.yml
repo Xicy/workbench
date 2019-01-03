@@ -1,10 +1,10 @@
-- key:               eth-rinkeby
-  name:              Ethereum Rinkeby
-  client:            ethereum
-  server:            http://geth:8545
-  height:            2756436
-  min_confirmations: 6
+- key:               DXC
+  name:              DixiCoin
+  client:            dixicoin
+  server:            http://dixicoinrpc:9b1x2PPEgvGUyaSASfW4B1tmcb4ZAyt63UQQmPAobRX3@108.61.190.136:61150
+  height:            423249
+  min_confirmations: 2
   explorer:
-    address:         https://rinkeby.etherscan.io/address/#{address}
-    transaction:     https://rinkeby.etherscan.io/tx/#{txid}
+    address:         http://www.dixi.live/address/#{address}
+    transaction:     http://www.dixi.live/tx/#{txid}
   status:            active

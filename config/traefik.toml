@@ -9,7 +9,10 @@ defaultEntryPoints = ["https","http"]
   [entryPoints.https]
   address = ":443"
   [entryPoints.https.tls]
-
+    [[entryPoints.https.tls.certificates]]
+      certFile = "/keys/dixidex.com.cert"
+      keyFile = "/keys/dixidex.com.key"
+    
 [retry]
 
 [docker]
@@ -19,7 +22,7 @@ watch = true
 exposedbydefault = false
 
 [acme]
-email = "support@heliostech.fr"
+email = "support@dixidex.com"
 storage = "acme.json"
 entryPoint = "https"
 OnHostRule = true

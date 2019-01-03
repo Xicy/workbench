@@ -1,64 +1,23 @@
-- name:             Ethereum Deposit Wallet
-  blockchain_key:   eth-rinkeby
-  currency_id:      eth
-  address:          '0x2b9fBC10EbAeEc28a8Fc10069C0BC29E45eBEB9C'
+- name:             Dixicoin Deposit Wallet
+  blockchain_key:   DXC
+  currency_id:      dxc
+  address:          'DU9gxQkcU9GR7MPfGYDcnuSmLTXVMdD7FL'
   kind:             deposit
   nsig:             1
   max_balance:      0.0
   status:           active
-  gateway:          geth
+  gateway:          dixicoind
   settings:
-    uri:            http://geth:8545
-    secret:         'changeme'
+    uri:            http://dixicoinrpc:9b1x2PPEgvGUyaSASfW4B1tmcb4ZAyt63UQQmPAobRX3@108.61.190.136:61150
 
-- name:             Ethereum Hot Wallet
-  blockchain_key:   eth-rinkeby
-  currency_id:      eth
-  address:          '0x0f493226a8a98363e9a85e6b8eca468a18cc6fbb'
+- name:             Dixicoin Hot Wallet
+  blockchain_key:   DXC
+  currency_id:      dxc
+  address:          'DU9gxQkcU9GR7MPfGYDcnuSmLTXVMdD7FL'
   kind:             hot
   nsig:             1
   max_balance:      100.0
   status:           active
-  gateway:          geth
+  gateway:          dixicoind
   settings:
-    uri:            http://geth:8545
-    secret:         'test'
-
-- name:             Ethereum Wallet for paying ERC20 fees
-  blockchain_key:   eth-rinkeby
-  currency_id:      eth
-  address:          '0x0f493226a8a98363e9a85e6b8eca468a18cc6fbb'
-  kind:             fee
-  nsig:             1
-  max_balance:      100.0
-  status:           active
-  gateway:          geth
-  settings:
-    uri:            http://geth:8545
-    secret:         'test'
-
-- name:             Trust Deposit Wallet
-  blockchain_key:   eth-rinkeby
-  currency_id:      trst
-  address:          '0x2b9fBC10EbAeEc28a8Fc10069C0BC29E45eBEB9C'
-  kind:             deposit
-  nsig:             1
-  max_balance:      0.0
-  status:           active
-  gateway:          geth
-  settings:
-    uri:            http://geth:8545
-    secret:         'changeme'
-
-- name:             Trust Hot Wallet
-  blockchain_key:   eth-rinkeby
-  currency_id:      trst
-  address:          '0x0f493226a8a98363e9a85e6b8eca468a18cc6fbb'
-  kind:             hot
-  nsig:             1
-  max_balance:      100.0
-  status:           active
-  gateway:          geth
-  settings:
-    uri:            http://geth:8545
-    secret:         'test'
+    uri:            http://dixicoinrpc:9b1x2PPEgvGUyaSASfW4B1tmcb4ZAyt63UQQmPAobRX3@108.61.190.136:61150

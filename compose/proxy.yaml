@@ -10,16 +10,16 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - ../config/traefik.toml:/etc/traefik/traefik.toml:ro
       - ../config/acme.json:/acme.json
+      - ../config/keys/:/keys/
     networks:
       default:
         aliases:
-          - api.wb.local
-          - auth.wb.local
-          - ws.ranger.wb.local
-          - pma.wb.local
-          - eth.wb.local
-          - monitor.wb.local
+          - dixidex.com
+          - auth.dixidex.com
+          - ws.dixidex.com
+          - pma.dixidex.com
+          - monitor.dixidex.com
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: monitor.wb.local'
+      traefik.frontend.rule: 'Host: monitor.dixidex.com'
       traefik.port: 8080
